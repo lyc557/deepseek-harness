@@ -5,6 +5,9 @@
 
 all: help
 
+clean:
+	pnpm run clean
+
 install:
 	pnpm install
 
