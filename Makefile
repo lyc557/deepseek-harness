@@ -12,7 +12,9 @@ build:
 	pnpm run build
 
 web:
+	export ELECTRON_PATH="$HOME/.dsh/profiles/web/node_modules/.pnpm/electron@44.1.0/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron"
 	pnpm dsh web
+
 
 # 杀掉占用3080端口进程，macos / linux 兼容
 stop:
